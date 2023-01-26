@@ -3,15 +3,12 @@
     <%= image_tag product.image.tiny.url %>
   </td>
   <td>
-    <h4><%= product.name %></h4>
+    <h4><%= category.name %></h4>
     <br>
-    <p><%= product.description %></p>
+    <p><%= category.description %></p>
   </td>
   <td>
-    <%= product.category.name %>
-  </td>
-  <td>
-    <%= humanized_money_with_symbol product.price %>
+    <%= category.category.name %>
   </td>
   <td>
     <%= product.quantity %>
