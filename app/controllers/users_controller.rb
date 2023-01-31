@@ -1,9 +1,7 @@
-# app/controllers/users_controller.rb
-
 class UsersController < ApplicationController
-
   def new
   end
+
   
   def create
     user = User.new(user_params)
@@ -11,7 +9,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      redirect_to '/signup'
+      redirect_to '/users/new'
     end
   end
 
@@ -20,5 +18,4 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
-
 end
