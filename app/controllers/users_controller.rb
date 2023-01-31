@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   def new
+    # @error_msg = 'User Already Exist'
   end
+
 
   
   def create
@@ -9,7 +11,8 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      redirect_to '/users/new'
+      @error_msg = 'User already exist'
+      redirect_to '/users/new', :error_msg => 'User Already Exist'
     end
   end
 

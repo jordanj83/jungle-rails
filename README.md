@@ -29,3 +29,10 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+## images
+!["Main view"](https://github.com/jordanj83/jungle-rails/blob/master/jungle%20main.PNG)
+This is the main page.
+!["login"](https://github.com/jordanj83/jungle-rails/blob/master/jungle%20login.PNG)
+View of cancelation.
+!["checkout"](https://github.com/jordanj83/jungle-rails/blob/master/jungle%20checkout.PNG)
+This is a view of the editing page
